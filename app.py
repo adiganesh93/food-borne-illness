@@ -86,7 +86,7 @@ def serve_roc_curve(model,X_test,y_test):
 
 
 # read data into file and impute missing values
-data= pd.read_csv("new_outbreak.csv")
+data= pd.read_csv("new_final_outbreaks.csv")
 accuracy, auc, cnf, model, Xtest, ytest = get_results(data,C = 0.1, max_iter = 100, penalty='l1')
 #roc_figure = serve_roc_curve(model=model,X_test=Xtest,y_test=ytest)
 
